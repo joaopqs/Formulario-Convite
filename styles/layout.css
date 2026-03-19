@@ -1,0 +1,18 @@
+#app {
+    background-color: var(--shape-body);
+    display: grid;
+    grid-template-columns: 67.21% 32.79%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 8.125rem;
+
+    & .main-container {
+        max-width: 35rem;
+        margin-left: auto;
+    }
+}

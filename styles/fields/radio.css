@@ -1,0 +1,62 @@
+/* --- Novo CSS para o Controle Segmentado --- */
+
+/* Esconde o radio input de forma acessível */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* O contêiner externo com borda arredondada */
+.segmented-control-group {
+    display: flex;
+    width: 100%;
+    /* Utilizando suas variáveis de cor para o contêiner */
+    background-color: var(--shape-background);
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.75rem; /* Cantos arredondados externos */
+    padding: 0.25rem; /* Respiro interno para o fundo e borda */
+}
+
+/* O estilo de cada botão/opção */
+.segmented-control-item {
+    flex: 1; /* Divide o espaço igualmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* Espaço entre ícone e texto */
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.5rem; /* Cantos arredondados internos */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    
+    /* Cor do texto e ícone inativo (cinza) */
+    color: var(--input-placeholder);
+    font: var(--body-sm); /* Utilizando sua variável de fonte */
+}
+
+/* O estilo da opção ativa/selecionada */
+.segmented-control-group input[type="radio"]:checked + .segmented-control-item {
+    /* Fundo mais claro e cor ativa do texto */
+    background-color: var(--shape-button);
+    color: var(--text-heading);
+}
+
+/* O estilo dos ícones */
+.segmented-control-item .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Efeito sutil ao passar o mouse sobre opções não selecionadas */
+.segmented-control-group input[type="radio"]:not(:checked) + .segmented-control-item:hover {
+    background-color: var(--shape-hover);
+    color: var(--text-body);
+}

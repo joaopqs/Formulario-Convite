@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--shape-body);
 }
 
 :root {
@@ -55,12 +54,16 @@
     --heading-sm: 700  1.125rem var(--font-baloo);
 
     --body-md: 500 1rem var(--font-open-sans);
-    --body-sm: 500 0.875rem var(--font-open-sans);
-    --body-xs: 500 0.75rem var(--font-open-sans);
+    --body-sm: 400 0.875rem var(--font-open-sans);
+    --body-xs: 400 0.75rem var(--font-open-sans);
 
+}
 
+h1 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+}
 
-
-
-
+h2 {
+    
 }
