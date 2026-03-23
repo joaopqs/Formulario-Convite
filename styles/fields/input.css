@@ -4,9 +4,13 @@ input {
     border-radius: .5rem;
     border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
+    height: 3rem;
 
     padding: 0.8125rem 1rem;
-
+    
+    & .name-start {
+        height: 40px;
+    }
 }
 
 input[type="datetime-local"] {
@@ -19,8 +23,15 @@ label {
     font: var(--body-sm);
     color: var(--text-body);
     display: block;
-    margin-bottom: 0.75rem;
+    /* margin-bottom: 0.75rem; */
+
 }
+
+.label-text {
+        display: block;
+        margin-bottom: 0.75rem;
+
+    }
 
 input::placeholder {
     font: var(--body-md);
@@ -34,14 +45,14 @@ input:focus, select:focus, textarea:focus, input[type="date"]:focus-within {
     outline-offset: .1px;
 }
 
-.date-wrapper {
+.date-wrapper, .button-wrapper {
     display: flex;
     gap: 1rem;
     margin: 0;
     width: 100%;
 }
 
-.date-wrapper .input-wrapper {
+.date-wrapper, .input-wrapper, .button-wrapper{
     flex: 1;
 }
 

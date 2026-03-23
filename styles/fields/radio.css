@@ -1,4 +1,6 @@
-/* --- Novo CSS para o Controle Segmentado --- */
+.button-wrapper + label {
+    margin-bottom: 0;
+}
 
 /* Esconde o radio input de forma acessível */
 .sr-only {
@@ -11,6 +13,7 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+
 }
 
 /* O contêiner externo com borda arredondada */
@@ -20,8 +23,9 @@
     /* Utilizando suas variáveis de cor para o contêiner */
     background-color: var(--shape-background);
     border: 1px solid var(--input-stroke);
-    border-radius: 0.75rem; /* Cantos arredondados externos */
-    padding: 0.25rem; /* Respiro interno para o fundo e borda */
+    border-radius: 0.5rem; /* Cantos arredondados externos */
+    /* padding: 0.15rem; Respiro interno para o fundo e borda */
+    height: 48px;
 }
 
 /* O estilo de cada botão/opção */
