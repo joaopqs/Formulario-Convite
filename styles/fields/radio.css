@@ -35,7 +35,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem; /* Espaço entre ícone e texto */
-    padding: 0.75rem 1rem;
+    padding: 0.5rem;
     cursor: pointer;
     text-align: center;
     border-radius: 0.5rem; /* Cantos arredondados internos */
@@ -63,4 +63,26 @@
 .segmented-control-group input[type="radio"]:not(:checked) + .segmented-control-item:hover {
     background-color: var(--shape-hover);
     color: var(--text-body);
+}
+
+.radio-wrapper-inline {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 1rem;
+    
+
+    & .radio-circle {
+        border-radius: 999px;
+        width: 2.5rem;
+        height: 2.5rem;
+        outline: solid 6px var(--shape-button);
+        outline-width: 6px;
+
+        /* margin-left: 12px; */
+    }
+}
+
+.grid-event {
+    display: grid;
+    grid-template-columns: auto;
 }
